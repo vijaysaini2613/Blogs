@@ -56,7 +56,7 @@ const Navbar = () => {
   const logoutHandler = async (e) => {
     try {
       const res = await axios.get(
-        `https://blogs-w49k.onrender.com/user/logout`,
+        `https://blogs-w49k.onrender.com/api/v1/user/logout`,
         { withCredentials: true }
       );
       if (res.data.success) {

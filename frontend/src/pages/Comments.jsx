@@ -19,7 +19,7 @@ const Comments = () => {
   const getTotalComments = async () => {
     try {
       const res = await axios.get(
-        `https://blogs-w49k.onrender.com/comment/my-blogs/comments`,
+        `https://blogs-w49k.onrender.com/api/v1/comment/my-blogs/comments`,
         { withCredentials: true }
       );
       if (res.data.success) {

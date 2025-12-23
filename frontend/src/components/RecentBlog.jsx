@@ -41,7 +41,7 @@ const RecentBlog = () => {
     const getAllPublsihedBlogs = async () => {
       try {
         const res = await axios.get(
-          `https://blogs-w49k.onrender.com/blog/get-published-blogs`,
+          `https://blogs-w49k.onrender.com/api/v1/blog/get-published-blogs`,
           { withCredentials: true }
         );
         if (res.data.success) {

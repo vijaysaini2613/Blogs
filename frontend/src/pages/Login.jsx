@@ -33,7 +33,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `https://blogs-w49k.onrender.com/user/login`,
+        `https://blogs-w49k.onrender.com/api/v1/user/login`,
         input,
         {
           headers: {

@@ -74,7 +74,7 @@ const UpdateBlog = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `https://blogs-w49k.onrender.com/blog/${id}`,
+        `https://blogs-w49k.onrender.com/api/v1/blog/${id}`,
         formData,
         {
           headers: {
@@ -100,7 +100,7 @@ const UpdateBlog = () => {
 
     try {
       const res = await axios.patch(
-        `https://blogs-w49k.onrender.com/blog/${id}`,
+        `https://blogs-w49k.onrender.com/api/v1/blog/${id}`,
         {
           params: {
             action,
@@ -123,7 +123,7 @@ const UpdateBlog = () => {
   const deleteBlog = async () => {
     try {
       const res = await axios.delete(
-        `https://blogs-w49k.onrender.com/blog/delete/${id}`,
+        `https://blogs-w49k.onrender.com/api/v1/blog/delete/${id}`,
         { withCredentials: true }
       );
       if (res.data.success) {

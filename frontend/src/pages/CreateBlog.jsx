@@ -33,7 +33,7 @@ const CreateBlog = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        `https://blogs-w49k.onrender.com/blog/`,
+        `https://blogs-w49k.onrender.com/api/v1/blog/`,
         { title, category },
         {
           headers: {

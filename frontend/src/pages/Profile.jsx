@@ -70,7 +70,7 @@ const Profile = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `https://blogs-w49k.onrender.com/user/profile/update`,
+        `https://blogs-w49k.onrender.com/api/v1/user/profile/update`,
         formData,
         {
           headers: {
