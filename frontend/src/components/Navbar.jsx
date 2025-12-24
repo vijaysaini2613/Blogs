@@ -93,7 +93,7 @@ const Navbar = () => {
                 alt=""
                 className="w-7 h-7 md:w-10 md:h-10 dark:invert"
               />
-              <h1 className="font-bold text-3xl md:text-4xl">Logo</h1>
+              <h1 className="font-bold text-3xl md:text-4xl">Blog</h1>
             </div>
           </Link>
           <div className="relative hidden md:block">
